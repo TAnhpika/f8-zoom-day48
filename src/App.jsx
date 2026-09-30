@@ -1,13 +1,12 @@
-import { Button } from "./components/ui/button";
+import { Flex, Text, Button } from "@radix-ui/themes";
 
 function App() {
     return (
         <>
-            <div className="flex min-h-svh flex-col items-center justify-center ">
-                <Button className="bg-pink-400 hover:bg-pink-500">
-                    Click me
-                </Button>
-            </div>
+            <Flex direction="column" gap="2">
+                <Text>Hello from Radix Themes :)</Text>
+                <Button>Let's go</Button>
+            </Flex>
         </>
     );
 }
