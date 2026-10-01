@@ -25,6 +25,9 @@ npm install @radix-ui/themes
   Config:
   npx shadcn@latest init
 
+- đã có sẵn lucide icon
+  https://lucide.dev/
+
 ## cn
 
 cn có:
@@ -36,3 +39,27 @@ cn có:
 
 - asChild: gộp thẻ Button thành thẻ a (bảo toàn Prop của Button)
   <Button asChild><a>Link</a></Button>
+
+---
+
+# Threads
+
+- npm i react-router
+
+### state
+
+- remote state: ở server / database
+- global state: state chung trong project - trong store của redux - chia sẻ cho all components
+- local state: state trong 1 components
+
+### RTK query
+
+- tiện
+- trả về state, loading, error
+
+## Shadcn components
+
+- npx shadcn@latest add navigation-menu
+
+## lưu ý
+- navigation truyền icon lucide dưới dạng component, truyền trực tiếp sẽ như string -> lỗi
