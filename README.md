@@ -16,3 +16,6 @@ npx shadcn@latest init
 
 https://www.radix-ui.com/themes/docs/overview/getting-started
 npm install @radix-ui/themes
+
+## Radix Primitives
+- npm i @radix-ui/react-icons
