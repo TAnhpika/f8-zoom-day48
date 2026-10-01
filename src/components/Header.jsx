@@ -23,7 +23,7 @@ export default function Header() {
                 </svg>
             </Link>
 
-            <Button>Open app</Button>
+            <Button className="cursor-pointer h-10">Open app</Button>
         </div>
     );
 }
