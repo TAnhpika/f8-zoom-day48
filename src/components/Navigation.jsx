@@ -1,7 +1,7 @@
 import {
     NavigationMenu,
     NavigationMenuItem,
-    NavigationMenuLink,
+    // NavigationMenuLink,
     NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@radix-ui/themes";
@@ -25,19 +25,19 @@ export default function Navigation() {
 
                     return item.path ? (
                         <NavigationMenuItem key={index}>
-                            <NavigationMenuLink asChild>
+                            {/* <NavigationMenuLink asChild> */}
                                 <NavLink to={item.path}>
                                     <Icon />
                                 </NavLink>
-                            </NavigationMenuLink>
+                            {/* </NavigationMenuLink> */}
                         </NavigationMenuItem>
                     ) : (
                         <NavigationMenuItem key={index}>
-                            <NavigationMenuLink asChild>
+                            {/* <NavigationMenuLink asChild> */}
                                 <Button>
                                     <Icon />
                                 </Button>
-                            </NavigationMenuLink>
+                            {/* </NavigationMenuLink> */}
                         </NavigationMenuItem>
                     );
                 })}

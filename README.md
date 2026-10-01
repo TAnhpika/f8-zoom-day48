@@ -62,4 +62,6 @@ cn có:
 - npx shadcn@latest add navigation-menu
 
 ## lưu ý
+
 - navigation truyền icon lucide dưới dạng component, truyền trực tiếp sẽ như string -> lỗi
+- center: absolute left-1/2 -translate-x-1/2
