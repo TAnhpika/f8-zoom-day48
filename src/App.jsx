@@ -1,64 +1,15 @@
-import { Cross2Icon } from "@radix-ui/react-icons";
-import { Dialog } from "radix-ui";
+import { Button } from "@/components/ui/button";
+import { Input } from "./components/ui/input";
 
 function App() {
     return (
         <>
-            <Dialog.Root>
-                <Dialog.Trigger asChild>
-                    <button className="Button violet">Edit profile</button>
-                </Dialog.Trigger>
-                <Dialog.Portal>
-                    <Dialog.Overlay className="DialogOverlay" />
-                    <Dialog.Content className="DialogContent">
-                        <Dialog.Title className="DialogTitle">
-                            Edit profile
-                        </Dialog.Title>
-                        <Dialog.Description className="DialogDescription">
-                            Make changes to your profile here. Click save when
-                            you&apos;re done.
-                        </Dialog.Description>
-                        <fieldset className="Fieldset">
-                            <label className="Label" htmlFor="name">
-                                Name
-                            </label>
-                            <input
-                                className="Input"
-                                id="name"
-                                defaultValue="Pedro Duarte"
-                            />
-                        </fieldset>
-                        <fieldset className="Fieldset">
-                            <label className="Label" htmlFor="username">
-                                Username
-                            </label>
-                            <input
-                                className="Input"
-                                id="username"
-                                defaultValue="@peduarte"
-                            />
-                        </fieldset>
-                        <div
-                            style={{
-                                display: "flex",
-                                marginTop: 25,
-                                justifyContent: "flex-end",
-                            }}
-                        >
-                            <Dialog.Close asChild>
-                                <button className="Button green">
-                                    Save changes
-                                </button>
-                            </Dialog.Close>
-                        </div>
-                        <Dialog.Close asChild>
-                            <button className="IconButton" aria-label="Close">
-                                <Cross2Icon />
-                            </button>
-                        </Dialog.Close>
-                    </Dialog.Content>
-                </Dialog.Portal>
-            </Dialog.Root>
+            <div className="flex min-h-svh flex-col items-center justify-center ">
+                <Button asChild className="" variant="destructive" size="lg">
+                    <a href="#!">Link</a>
+                </Button>
+                <Input placeholder="Enter text" className="w-30 mt-2" />
+            </div>
         </>
     );
 }
